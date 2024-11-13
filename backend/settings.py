@@ -27,7 +27,8 @@ SECRET_KEY = 'django-insecure-_qai+sm@ey@hje9qx7%hj!+-f2(1xov+q_1(@+i6#l2!x6%6gb
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["ackend.onrender.com","127.0.0.1","localhost"]
+ALLOWED_HOSTS = ['frontend-2hjr.onrender.com', 'localhost', '127.0.0.1']
+
 
 
 # Application definition
@@ -193,3 +194,7 @@ SIMPLE_JWT = {
 CORS_ALLOW_ALL_ORIGINS = True
 MEDIA_URL = '/media/'
 MEDIA_ROOT = BASE_DIR / 'media'
+CSRF_TRUSTED_ORIGINS = [
+    'https://frontend-2hjr.onrender.com',
+]
+
